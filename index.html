@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>github profile</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <script src="./index.js"></script>
+        <div class="container">
+            <div class="profile">
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="imgbg">
+                            <img id="user-img" src="./media/examples/avatar.png" alt="my image">
+                        </div>
+                        <div id="bio" class="bio">
+                            <h3>bio</h3>
+                            <div id="bio-text"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>name</h3>
+                        <p id="user-name"></p>
+                        <h3>blog</h3>
+                        <a id="user-blog" href=""></a>
+                        <h3>city</h3>
+                        <p id="user-city"></p>
+                        <h3>prgoramming language</h3>
+                        <p id="user-lang"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="data-submit">
+                <div class="formgrp">
+                    <input type="text" name="user-id" id="user-id" oninput="textInputChange()"/>
+                    <div class="btn">
+                        <button id="submit-btn" disabled="true" onclick="clickHandler()">get user</button>
+                    </div>
+                    <div>
+                        <p id="error-element" hidden>user not found.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

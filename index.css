@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10% 20%;
+    min-height: 70%;
+    min-width: 500px;
+}
+
+.container .profile {
+    width: 70%;
+    padding: 0px 0px;
+    box-shadow: 0 1px 10px 0 rgba(81, 3, 170, 0.08);
+}
+
+.container .data-submit {
+    width: 30%;
+    padding: 20px 25px;
+    box-shadow: 0 1px 10px 0 rgba(81, 3, 170, 0.08);
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.container .data-submit .formgrp {
+    padding: 0px 0px;
+}
+
+.container .data-submit .formgrp input{
+    width: 100%;
+}
+
+.container .data-submit .btn {
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+
+.container .profile .wrapper {
+    display: flex;
+}
+
+
+.container .profile .wrapper .left {
+    width: 35%;
+    background-color: aqua;
+    padding: 25px 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container .profile .wrapper h3{
+    font-size: small;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+
+.container .profile img {
+    width: 98%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 4px;
+    border-style: dotted;
+    border-color: rgb(4, 78, 2);
+}
+
+
+.container .profile .wrapper .right {
+    width: 65%;
+    padding: 25px 30px;
+    border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    /* text-align: center; */
+}
+
+.container .profile .wrapper .right p {
+    font-size: smaller;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.imgbg {
+    position: relative;
+}
+
+.imgbg::after {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 87, 34, 1) 0%,
+        rgba(205, 220, 57, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+}
