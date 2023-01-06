@@ -1,7 +1,14 @@
+/* set html page size to fit browser page and do not need scrolling */
 html {
     height: 100%;
 }
 
+body {
+    background-image: url('./media/examples/octcat.webp');
+    background-repeat: no-repeat;
+}
+
+/* define the main container class to have to subelement each in one side */
 .container {
     display: flex;
     justify-content: center;
@@ -10,61 +17,103 @@ html {
     min-width: 500px;
 }
 
+/* define the profile part to get 70% of width */
 .container .profile {
+    background: rgba(106, 93, 131, 0.7);
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: larger;
+    color: rgb(255, 255, 255);
     width: 70%;
     padding: 0px 0px;
     box-shadow: 0 1px 10px 0 rgba(81, 3, 170, 0.08);
 }
 
+/* define the data submit part to get 30% of width */
 .container .data-submit {
     width: 30%;
     padding: 20px 25px;
+    background: rgba(106, 93, 131, 0.7);
     box-shadow: 0 1px 10px 0 rgba(81, 3, 170, 0.08);
     margin-left: 20px;
     border-radius: 5px;
 }
 
+/* class to pad submit part elements if needed. */
 .container .data-submit .formgrp {
     padding: 0px 0px;
 }
 
+/* set inputs width in form group to 100% */
 .container .data-submit .formgrp input{
     width: 100%;
+    font-size: large;
+    height: 30px;
+    border-radius: 10px;
 }
 
+/* define class to set submit button to right of the page */
 .container .data-submit .btn {
     margin-top: 5px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
+/* change button style */
+#submit-btn {
+    font-size: large;
+    color: blanchedalmond;
+    background-color: rgb(42, 1, 66);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
 
+/* container to profile info to break info into two parts */
 .container .profile .wrapper {
     display: flex;
 }
 
-
+/* define left part properties such as bg color and width */
 .container .profile .wrapper .left {
     width: 35%;
-    background-color: aqua;
     padding: 25px 30px;
+    background-color: rgba(106, 93, 131, 0.7);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
+/* define specific format for h3 headers in profile part */
 .container .profile .wrapper h3{
     font-size: small;
     margin-bottom: 0px;
     padding-bottom: 5px;
+    color: rgb(228, 213, 130);
+    font-family: sans-serif;
+    font-size: large;
     border-bottom: 1px solid #e0e0e0;
     text-transform: uppercase;
     word-spacing: 5px;
 }
 
 
+/* define specific format for h3 headers in profile part */
+.container .profile .wrapper a {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+/* wraps the bio information to next line */
+#bio-text {
+    white-space: pre-line;
+}
+
+/* define specific format for images in profile part */
 .container .profile img {
     width: 98%;
     aspect-ratio: 1;
+    opacity: 1;
     border-radius: 50%;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -74,7 +123,7 @@ html {
     border-color: rgb(4, 78, 2);
 }
 
-
+/* define properties of info part in page */
 .container .profile .wrapper .right {
     width: 65%;
     padding: 25px 30px;
@@ -83,26 +132,19 @@ html {
     /* text-align: center; */
 }
 
+/* define specific properties for texts in profile part */
 .container .profile .wrapper .right p {
     font-size: smaller;
     margin: 0;
     padding-left: 5px;
 }
 
+/* sets the image background position to be relative */
 .imgbg {
     position: relative;
 }
 
-.imgbg::after {
-    background: linear-gradient(
-        90deg,
-        rgba(255, 87, 34, 1) 0%,
-        rgba(205, 220, 57, 1) 100%,
-        rgba(0, 212, 255, 1) 100%
-    );
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    z-index: -1;
+#error-element {
+    color: red;
+    font-family: sans-serif;
 }
